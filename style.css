@@ -5,12 +5,6 @@ body {
     margin: 0px;
 }
 
-@media (prefers-color-scheme: dark) {
-    body {
-        color: white;
-        background-color: #2B2A33;
-    }
-}
 
 #container {
     position: absolute;
@@ -20,7 +14,30 @@ body {
     transform: translate(-50%, -50%);
     margin: 0;
     padding: 0;
-    width: 80vw;
+
     white-space: nowrap;
     text-align: center;
+}
+
+#button {
+    width: 100vw;
+    height: 100vh;
+    background: none;
+    font-size: 5vw;
+    color: black;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        color: white;
+        background-color: #2B2A33;
+    }
+
+    #button {
+        color: white;
+    }
 }
